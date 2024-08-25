@@ -15,17 +15,17 @@
 		var year=document.querySelector('#year_prigovor').value;
 		var month=document.querySelector('#month_prigovor').value;
 		var date_prigovor = new Date(document.querySelector('#date_prigovor').value);
-		if(date_prigovor==null) {
+		//if(date_prigovor==null) {
 			var d2=new Date(d1.toJSON());
 			d2.setFullYear(d1.getFullYear()+1*year);
 			d2.setMonth(d1.getMonth()+1*month);
 			var rez=Math.trunc((d2-d1)/sutki/coeff);
-		} else {
-			var d2=new Date(d1.toJSON());
-			d2.setFullYear(d1.getFullYear()+1*year);
-			d2.setMonth(d1.getMonth()+1*month);
+		//} else {
+			//var d2=new Date(d1.toJSON());
+			//d2.setFullYear(d1.getFullYear()+1*year);
+			//d2.setMonth(d1.getMonth()+1*month);
 			var rez = Math.trunc((date_prigovor - d1)/sutki/coeff + (d2-d1)/sutki)
-		}
+		//}
 		var d=new Date(d1.toJSON());
 		d.setDate(d.getDate() + rez);
 		
