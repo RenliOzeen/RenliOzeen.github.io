@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gorisont{
+	display: inline-block;
+}
+.centr{
+    margin-left: 32%;
+}
+.of_number{
+    overflow: scroll;
+    height: 121px;
+}
+.set_number{
+    height: 30px;
+}
+.me_icon_share{
+    background-image: url("js/images/Share24.png");
+}
+.centr_text{
+    text-align: center;
+}
